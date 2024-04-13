@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PicturePuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="fNc-os-P1m" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n0Y-6M-GhC" userLabel="screenView">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solve The Puzzle!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-El-xJN">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="151.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <color key="textColor" red="0.44823437929999999" green="0.13004866239999999" blue="0.1176209822" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iql-4E-amK" userLabel="rowOne">
+                                        <rect key="frame" x="0.0" y="151.66666666666666" width="353" height="151.99999999999997"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eiw-fm-UZO" userLabel="imageViewOne">
+                                                <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="152"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mM6-dC-mhp" userLabel="imageViewTwo">
+                                                <rect key="frame" x="117.66666666666666" y="0.0" width="117.66666666666666" height="152"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Etn-Iy-AgM" userLabel="imageViewThree">
+                                                <rect key="frame" x="235.33333333333334" y="0.0" width="117.66666666666666" height="152"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ig9-cg-eo7" userLabel="rowTwo">
+                                        <rect key="frame" x="0.0" y="303.66666666666669" width="353" height="151.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vsa-Ul-ike" userLabel="imageViewFour">
+                                                <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="151.66666666666666"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ApQ-KQ-Ykk" userLabel="imageViewFive">
+                                                <rect key="frame" x="117.66666666666666" y="0.0" width="117.66666666666666" height="151.66666666666666"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-As-bqw" userLabel="imageViewSix">
+                                                <rect key="frame" x="235.33333333333334" y="0.0" width="117.66666666666666" height="151.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XdV-VT-uTf" userLabel="rowThree">
+                                        <rect key="frame" x="0.0" y="455.33333333333337" width="353" height="152"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Wh-d8-CeU" userLabel="imageViewSeven">
+                                                <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="152"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0r-Yg-boj" userLabel="imageViewEight">
+                                                <rect key="frame" x="117.66666666666666" y="0.0" width="117.66666666666666" height="152"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0VZ-ie-LBh" userLabel="imageViewNine">
+                                                <rect key="frame" x="235.33333333333334" y="0.0" width="117.66666666666666" height="152"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LR-Z2-fJd" userLabel="resetView">
+                                        <rect key="frame" x="0.0" y="607.33333333333337" width="353" height="151.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="158-Y6-L7V">
+                                                <rect key="frame" x="139" y="58.666666666666629" width="75" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="RESET" cornerStyle="capsule">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.96862745098039216" green="0.93333333333333335" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdk-s5-SCf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="158-Y6-L7V" firstAttribute="centerX" secondItem="6LR-Z2-fJd" secondAttribute="centerX" id="8B8-Jd-Ona"/>
+                                            <constraint firstItem="158-Y6-L7V" firstAttribute="centerY" secondItem="6LR-Z2-fJd" secondAttribute="centerY" id="WIt-xG-GNP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="n0Y-6M-GhC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0p3-SL-VMz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n0Y-6M-GhC" secondAttribute="bottom" id="BwM-Gb-m5G"/>
+                            <constraint firstItem="n0Y-6M-GhC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HCi-Tu-UXh"/>
+                            <constraint firstAttribute="trailing" secondItem="fNc-os-P1m" secondAttribute="trailing" id="cGK-Kx-q9R"/>
+                            <constraint firstItem="fNc-os-P1m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qMi-hi-iNP"/>
+                            <constraint firstAttribute="bottom" secondItem="fNc-os-P1m" secondAttribute="bottom" id="reB-DX-q2H"/>
+                            <constraint firstItem="fNc-os-P1m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wec-l9-HvU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n0Y-6M-GhC" secondAttribute="trailing" constant="20" id="wyk-xz-68u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewEight" destination="B0r-Yg-boj" id="c1w-qE-KAf"/>
+                        <outlet property="imageViewFive" destination="ApQ-KQ-Ykk" id="Ce1-Cd-hYO"/>
+                        <outlet property="imageViewFour" destination="Vsa-Ul-ike" id="C8n-Bw-hv7"/>
+                        <outlet property="imageViewNine" destination="0VZ-ie-LBh" id="cV9-Hf-KRI"/>
+                        <outlet property="imageViewOne" destination="Eiw-fm-UZO" id="nic-lO-sYF"/>
+                        <outlet property="imageViewSeven" destination="8Wh-d8-CeU" id="Vrx-ge-AYT"/>
+                        <outlet property="imageViewSix" destination="A9z-As-bqw" id="rsH-c7-b0q"/>
+                        <outlet property="imageViewThree" destination="Etn-Iy-AgM" id="ttQ-vV-Z18"/>
+                        <outlet property="imageViewTwo" destination="mM6-dC-mhp" id="7bD-gF-LaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainBackground" width="360" height="640"/>
+    </resources>
+</document>
